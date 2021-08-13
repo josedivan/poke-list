@@ -1,0 +1,19 @@
+h1 {
+  margin-top: 10px;
+  font-family: "PressStart2P";
+  font-size: 18px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding-bottom: 20px;
+  color: #f5f3e1;
+}
+
+.buttons .button {
+  margin: 15px;
+}
