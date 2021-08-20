@@ -1,10 +1,17 @@
-<h1>Lista de Pokemons</h1>
-
-<app-pokemon-card
-  *ngFor="let pokemon of pokemons"
-  [pokemon]="pokemon"
-></app-pokemon-card>
+<!-- <app-pokemon-card class="pokemonCard" *ngFor="let pokemon of pokemons" [pokemon]="pokemon"></app-pokemon-card>
 
 <div class="buttons">
-  <po-button p-label="Carregar mais" (click)="pageNext()"></po-button>
-</div>
+  <po-button p-label="Carregar mais" (click)="loadMore()"></po-button>
+</div> -->
+
+
+<div class="po-container">
+
+  <div class="po-row">
+
+    <app-pokemon-card *ngFor="let pokemon of pokemons" [pokemon]="pokemon" class="po-xl-3 po-lg-3 po-md-3 po-sm-3 pokemon-card"></app-pokemon-card>
+  </div>
+
+  <div class="buttons">
+    <po-button p-label="Carregar mais" (click)="loadMore()"></po-button>
+  </div>

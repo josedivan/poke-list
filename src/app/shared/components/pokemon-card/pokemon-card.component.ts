@@ -7,8 +7,8 @@ import { Pokemon } from '../../models/pokemon.model';
   styleUrls: ['./pokemon-card.component.scss'],
 })
 export class PokemonCardComponent implements OnInit {
-  @Input('pokemon') pokemon: Pokemon;
-
+  @Input() pokemon: Pokemon;
+  
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,6 +1,5 @@
 import { Pokemon, PokemonResponse } from './../../shared/models/pokemon.model';
 import { PokemonService } from './../../shared/services/pokemon.service';
-import { Observable } from 'rxjs/internal/Observable';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,14 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   pokemons: Pokemon[] = [];
   page = 1;
-
-  totalPokemons: number;
-
-  pokeList$: Observable<any>;
-
   error: any;
 
-  constructor(private pokemonService: PokemonService) {}
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
     this.getPokemonList();
@@ -38,7 +32,9 @@ export class HomeComponent implements OnInit {
       console.error('ERRO:', error);
     };
   }
-  pageNext(): void {
+
+
+  loadMore(): void {
     this.page = this.page + 1;
     this.getPokemonList();
   }

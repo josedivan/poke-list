@@ -9,11 +9,20 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 24px;
   padding-bottom: 20px;
-  color: #f5f3e1;
+  color: var(--color-grey);
 }
 
 .buttons .button {
-  margin: 15px;
+  margin: 20px;
+}
+
+.po-container {
+  * {
+    grid-template-columns: 20px;
+  }
+}
+.pokemon-card {
+  width: 220px !important;
 }
