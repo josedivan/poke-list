@@ -18,11 +18,24 @@ h1 {
   margin: 20px;
 }
 
+.po-container{
+  box-shadow: none;
+}
 .po-container {
   * {
     grid-template-columns: 20px;
   }
+  
 }
 .pokemon-card {
   width: 220px !important;
+
 }
+
+.pokemon-titulo{
+text-align: center;
+padding-top: 20px;
+}
+
+
+
