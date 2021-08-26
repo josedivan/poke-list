@@ -1,5 +1,8 @@
 <po-container class>
   <div class="card">
+
+    <button (click)="modal.abrir(pokemon.id)">detalhes</button>
+
     <h2 class="poke-number">{{ pokemon.id }}</h2>
 
     <div>
@@ -11,3 +14,4 @@
     </div>
   </div>
 </po-container>
+<app-pokemon-modal #modal> </app-pokemon-modal>

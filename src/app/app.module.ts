@@ -1,6 +1,6 @@
 
 import { PokemonService } from './shared/services/pokemon.service';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,5 +21,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   providers: [PokemonService, HttpClient],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }
